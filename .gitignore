@@ -1,0 +1,86 @@
+# ==============================================================================
+# DocAnalyst - Git Ignore Rules
+# ==============================================================================
+
+# Environment files & API keys (CRITICAL: Never commit secrets)
+.env
+.env.*
+*.env
+!.env.example
+
+# Python cache & build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Python virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# DocAnalyst Backend Runtime Data & Storage (Personal user data / docs / embeddings)
+backend/users.json
+backend/chroma_db/
+backend/uploaded_docs/
+chroma_db/
+uploaded_docs/
+users.json
+*.sqlite3
+*.db
+
+# Node & Frontend dependencies / build outputs
+node_modules/
+*/node_modules/
+dist/
+*/dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sublime-project
+*.sublime-workspace
+
+# OS metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+[Dd]esktop.ini
